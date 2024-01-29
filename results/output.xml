@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240129 14:46:55.405" rpa="false" schemaversion="4">
+<suite id="s1" name="Quiz-Robot-FW-64021777-Patinya" source="D:\quize 64021777 patinya janphen\Quiz-Robot-FW-64021777-Patinya">
+<suite id="s1-s1" name="Testcases" source="D:\quize 64021777 patinya janphen\Quiz-Robot-FW-64021777-Patinya\testcases">
+<suite id="s1-s1-s1" name="Testcase1" source="D:\quize 64021777 patinya janphen\Quiz-Robot-FW-64021777-Patinya\testcases\testcase1.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240129 14:46:55.545" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<status status="PASS" starttime="20240129 14:46:55.544" endtime="20240129 14:46:59.403"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Register with valid info" line="106">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:46:59.412" level="INFO">Current page contains element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20240129 14:46:59.403" endtime="20240129 14:46:59.412"/>
+</kw>
+<kw name="Click SignupLogin Button">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240129 14:46:59.413" level="INFO">Clicking link '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20240129 14:46:59.413" endtime="20240129 14:47:00.141"/>
+</kw>
+<status status="PASS" starttime="20240129 14:46:59.413" endtime="20240129 14:47:00.141"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[3]/div/h2</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:47:00.153" level="INFO">Current page contains element '//*[@id="form"]/div/div/div[3]/div/h2'.</msg>
+<status status="PASS" starttime="20240129 14:47:00.141" endtime="20240129 14:47:00.153"/>
+</kw>
+<kw name="Input Name">
+<arg>${name}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@name="name"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:00.155" level="INFO">Typing text 'XXXXX' into text field '//*[@name="name"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:00.154" endtime="20240129 14:47:00.231"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:00.154" endtime="20240129 14:47:00.231"/>
+</kw>
+<kw name="Input Email">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[3]/div/form/input[3]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:00.233" level="INFO">Typing text 'dentrr15@gmail.com' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[3]'.</msg>
+<status status="PASS" starttime="20240129 14:47:00.232" endtime="20240129 14:47:00.342"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:00.232" endtime="20240129 14:47:00.342"/>
+</kw>
+<kw name="Click Signup Button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div[3]/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:00.343" level="INFO">Clicking button '//*[@id="form"]/div/div/div[3]/div/form/button'.</msg>
+<status status="PASS" starttime="20240129 14:47:00.343" endtime="20240129 14:47:02.818"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:00.342" endtime="20240129 14:47:02.818"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240129 14:47:04.819" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240129 14:47:02.819" endtime="20240129 14:47:04.819"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/div[1]/h2/b</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:47:04.831" level="INFO">Current page contains element '//*[@id="form"]/div/div/div/div[1]/h2/b'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.822" endtime="20240129 14:47:04.832"/>
+</kw>
+<kw name="Click Title">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="id_gender1"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:04.833" level="INFO">Clicking button '//*[@id="id_gender1"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.832" endtime="20240129 14:47:04.864"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:04.832" endtime="20240129 14:47:04.864"/>
+</kw>
+<kw name="Input Password">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:04.866" level="INFO">Typing text 'XXXXX' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.864" endtime="20240129 14:47:04.927"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:04.864" endtime="20240129 14:47:04.927"/>
+</kw>
+<kw name="Checked Sign up for our newsletter">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="newsletter"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:04.928" level="INFO">Clicking button '//*[@id="newsletter"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.927" endtime="20240129 14:47:04.962"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:04.927" endtime="20240129 14:47:04.962"/>
+</kw>
+<kw name="Checked Receive special offers from our partners">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="optin"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:04.963" level="INFO">Clicking button '//*[@id="optin"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.963" endtime="20240129 14:47:04.995"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:04.963" endtime="20240129 14:47:04.995"/>
+</kw>
+<kw name="Input First name">
+<arg>${first_name}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="first_name"]</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:04.996" level="INFO">Typing text 'patinya' into text field '//*[@id="first_name"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:04.996" endtime="20240129 14:47:05.055"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:04.995" endtime="20240129 14:47:05.056"/>
+</kw>
+<kw name="Input Last name">
+<arg>${last_name}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="last_name"]</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.057" level="INFO">Typing text 'janphen' into text field '//*[@id="last_name"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.056" endtime="20240129 14:47:05.122"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.056" endtime="20240129 14:47:05.122"/>
+</kw>
+<kw name="Input Company">
+<arg>${company}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="company"]</arg>
+<arg>${company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.123" level="INFO">Typing text 'test' into text field '//*[@id="company"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.122" endtime="20240129 14:47:05.185"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.122" endtime="20240129 14:47:05.185"/>
+</kw>
+<kw name="Input Address">
+<arg>${address}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="address1"]</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.186" level="INFO">Typing text 'test' into text field '//*[@id="address1"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.185" endtime="20240129 14:47:05.253"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.185" endtime="20240129 14:47:05.253"/>
+</kw>
+<kw name="Input Address2">
+<arg>${address2}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="address2"]</arg>
+<arg>${address2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.254" level="INFO">Typing text 'test' into text field '//*[@id="address2"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.253" endtime="20240129 14:47:05.310"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.253" endtime="20240129 14:47:05.311"/>
+</kw>
+<kw name="Input State">
+<arg>${state}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="state"]</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.312" level="INFO">Typing text 'nan' into text field '//*[@id="state"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.311" endtime="20240129 14:47:05.377"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.311" endtime="20240129 14:47:05.377"/>
+</kw>
+<kw name="Input City">
+<arg>${city}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="city"]</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.378" level="INFO">Typing text 'nan' into text field '//*[@id="city"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.378" endtime="20240129 14:47:05.434"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.378" endtime="20240129 14:47:05.434"/>
+</kw>
+<kw name="Input Zipcode">
+<arg>${zipcode}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="zipcode"]</arg>
+<arg>${zipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.435" level="INFO">Typing text '55110' into text field '//*[@id="zipcode"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.435" endtime="20240129 14:47:05.493"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.435" endtime="20240129 14:47:05.493"/>
+</kw>
+<kw name="Input Mobile Number">
+<arg>${mobile_number}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="mobile_number"]</arg>
+<arg>${mobile_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.495" level="INFO">Typing text '0931894005' into text field '//*[@id="mobile_number"]'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.494" endtime="20240129 14:47:05.560"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.494" endtime="20240129 14:47:05.560"/>
+</kw>
+<kw name="Click Create Account button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/div[1]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:05.561" level="INFO">Clicking button '//*[@id="form"]/div/div/div/div[1]/form/button'.</msg>
+<status status="PASS" starttime="20240129 14:47:05.561" endtime="20240129 14:47:06.540"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:05.560" endtime="20240129 14:47:06.540"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/h2/b</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:47:06.553" level="INFO">Current page contains element '//*[@id="form"]/div/div/div/h2/b'.</msg>
+<status status="PASS" starttime="20240129 14:47:06.541" endtime="20240129 14:47:06.553"/>
+</kw>
+<kw name="Click Continue button">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:06.554" level="INFO">Clicking link '//*[@id="form"]/div/div/div/div/a'.</msg>
+<status status="PASS" starttime="20240129 14:47:06.554" endtime="20240129 14:47:11.143"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:06.554" endtime="20240129 14:47:11.143"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/i</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:47:11.153" level="INFO">Current page contains element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/i'.</msg>
+<status status="PASS" starttime="20240129 14:47:11.144" endtime="20240129 14:47:11.153"/>
+</kw>
+<kw name="Click Delete Account button">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:11.154" level="INFO">Clicking link '//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20240129 14:47:11.154" endtime="20240129 14:47:11.835"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:11.154" endtime="20240129 14:47:11.835"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/h2/b</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240129 14:47:11.847" level="INFO">Current page contains element '//*[@id="form"]/div/div/div/h2/b'.</msg>
+<status status="PASS" starttime="20240129 14:47:11.835" endtime="20240129 14:47:11.848"/>
+</kw>
+<kw name="Click Continue button">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="form"]/div/div/div/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240129 14:47:11.849" level="INFO">Clicking link '//*[@id="form"]/div/div/div/div/a'.</msg>
+<status status="PASS" starttime="20240129 14:47:11.849" endtime="20240129 14:47:15.813"/>
+</kw>
+<status status="PASS" starttime="20240129 14:47:11.848" endtime="20240129 14:47:15.813"/>
+</kw>
+<doc>Test the login functionality with valid credentials</doc>
+<status status="PASS" starttime="20240129 14:46:59.403" endtime="20240129 14:47:15.813"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" starttime="20240129 14:46:55.424" endtime="20240129 14:47:15.814"/>
+</suite>
+<status status="PASS" starttime="20240129 14:46:55.422" endtime="20240129 14:47:15.816"/>
+</suite>
+<status status="PASS" starttime="20240129 14:46:55.408" endtime="20240129 14:47:15.817"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Quiz-Robot-FW-64021777-Patinya">Quiz-Robot-FW-64021777-Patinya</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcases">Quiz-Robot-FW-64021777-Patinya.Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase1">Quiz-Robot-FW-64021777-Patinya.Testcases.Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
